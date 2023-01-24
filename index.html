@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador Alura Challenge</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <img src="Images/Logo.png" alt="Logo Alura">
+          <h1>Bienvenido Encriptador</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="contenedor">
+
+            <div class="encriptador"> 
+                <textarea class="texto-area" id="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>                
+                <p class="informacion">Solo letras minusculas y sin acentos</p>
+                <button onclick="encriptar()" class="btn-encripta">Encriptar</button>
+                <button onclick="desencriptar()" class="btn-descifra">Desencriptar</button>
+                
+            </div>
+
+            <div class="desencriptar">
+                <img id="imagen_fondo" class="imagen_fondo" src="Images/Muñeco.png" alt="Imagen">
+                <textarea class="msj-resultado" id="resultado" cols="25" rows="10"
+                    placeholder="mensaje descifrado"></textarea>
+                    <button onclick="copiar()" class="btn-copiar">Copiar</button>
+               
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+
+
+
+</body>
+</html>
